@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<Name value="BCM_Master" />
+	<DisplayName value="BCM Master" />
+	<Description value="Burns Complete Master" />
+	<Author value="therealburnstein" />
+	<Version value="1.0" />
+	<Website value="https://github.com/RetroSocksCO" />
+	<SkipWithAntiCheat value="false" />
+</xml>
+
+

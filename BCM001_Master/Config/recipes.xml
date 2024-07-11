@@ -1,0 +1,65 @@
+<configs>
+
+	<append xpath="recipes">
+		
+		<recipe name="cntBottleDewCollector" count="1" craft_area="chemistryStation" tags="learnable,chemStationCrafting">
+			<ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceOilShale" count="12"/>
+		</recipe>
+
+		<recipe name="cntToiletDewCollector" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceForgedIron" count="40"/>
+			<ingredient name="resourceMetalPipe" count="5"/>
+			<ingredient name="resourceMechanicalParts" count="5"/>
+		</recipe>
+		
+		<recipe name="cntToilet03DewCollector" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceForgedIron" count="40"/>
+			<ingredient name="resourceMetalPipe" count="5"/>
+			<ingredient name="resourceMechanicalParts" count="5"/>
+		</recipe>
+
+		<recipe name="cntPBarrelDewCollector" count="1" craft_area="chemistryStation" tags="learnable,chemStationCrafting">
+			<ingredient name="resourceScrapPolymers" count="50"/>
+			<ingredient name="resourceOilShale" count="24"/>
+		</recipe>
+
+		<recipe name="cntPQBarrelDewCollector" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="cntPBarrelDewCollector" count="4"/>
+			<ingredient name="resourceWood" count="10"/>
+		</recipe>
+		
+		<recipe name="cntWBarrelDewCollector" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceWood" count="20"/>
+			<ingredient name="resourceForgedIron" count="5"/>
+		</recipe>
+		
+		<recipe name="capChimneyLargeSmoke" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceForgedIron" count="20"/>
+			<ingredient name="resourceMechanicalParts" count="5"/>
+		</recipe>
+		
+		<recipe name="chemistryStationMicro" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="toolBeaker" count="1"/>
+			<ingredient name="resourceForgedIron" count="100"/>
+			<ingredient name="toolCookingPot" count="3"/>
+			<ingredient name="resourceMetalPipe" count="30"/>
+			<ingredient name="resourceAcid" count="5"/>
+		</recipe>
+		
+		<recipe name="workbenchMicro" count="1" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceForgedIron" count="25"/>
+			<ingredient name="resourceMechanicalParts" count="20"/>
+			<ingredient name="resourceDuctTape" count="5"/>
+			<ingredient name="resourceNail" count="100"/>
+			<ingredient name="resourceWood" count="100"/>
+		</recipe>
+		
+		<recipe name="cntRollingToolBox_Player" count="1" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceForgedIron" count="25"/>
+			<ingredient name="resourceMechanicalParts" count="10"/>
+		</recipe>
+
+	</append>
+	
+</configs>

@@ -1,0 +1,445 @@
+<configs>
+	
+	<append xpath="/blocks">
+	
+		<!-- *** BOTTLE_DEW_COLLECTOR -->
+		<block name="cntBottleDewCollector">
+			<property name="Class" value="DewCollector"/>
+			<property name="UnlockedBy" value="craftingWorkstations"/>
+			<property name="WorkstationIcon" value="ui_game_symbol_water"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="cntWaterCoolerBottle"/>
+			<property name="DescriptionKey" value="dewCollectorAltDesc"/>
+			<property name="Material" value="MFuelBarrelPolymer"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/LootContainers/water_cooler_bottlePrefab.prefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="GndAlign" value="1"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="RestrictSubmergedPlacement" value="true"/>
+			<property name="AllowedRotations" value="Basic90"/>
+			<property name="Path" value="solid"/>
+			<property name="IsDecoration" value="true"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="OpenSound" value="open_cooler"/>
+			<property name="CloseSound" value="close_cooler"/>
+			<property name="ConvertSound" value="collector_complete_item"/>
+			<property name="MinConvertTime" value="21600"/> <!-- 21600 Game Seconds = 6 Game Hours -->
+			<property name="MaxConvertTime" value="36000"/> <!-- 36000 Game Seconds = 10 Game Hours -->
+			<property name="ConvertToItem" value="drinkJarRiverWater"/>
+			<property name="ModdedConvertToItem" value="drinkJarBoiledWater"/>
+			<property name="ModdedConvertSpeed" value="2"/>
+			<property name="ModdedConvertCount" value="2"/>
+			<property name="ModTransformNames" value="1,2,3"/>
+			<property name="ModTypes" value="Speed,Count,Type"/>
+			<property name="EconomicValue" value="5"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="MaxDamage" value="200"/>
+			<property name="HeatMapStrength" value="2"/>
+			<property name="HeatMapTime" value="5000"/>
+			<property name="HeatMapFrequency" value="1000"/>
+			<property class="RepairItems">
+				<property name="resourceScrapPolymers" value="5"/>
+			</property>
+			<drop event="Harvest" name="resourceScrapPolymers" count="1,3" tag="allHarvest"/>
+			<drop event="Harvest" name="resourceMetalPipe" count="0" tag="allHarvest"/>
+			<drop event="Destroy" name="resourceScrapPolymers" count="1,3"/>
+			<property name="DestroyFX" value="blockdestroy_cloth,collector_destroy"/>
+			<property name="SortOrder1" value="B281"/>
+			<property name="SortOrder2" value="0102"/>
+			<property name="Group" value="Basics,Food/Cooking,Building,advBuilding"/>
+			<property name="Tags" value="workstationSkill,twitch_workstation"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+		</block>
+		
+		<!-- *** TOILET_DEW_COLLECTOR -->
+		<block name="cntToiletDewCollector">
+			<property name="Class" value="DewCollector"/>
+			<property name="UnlockedBy" value="craftingWorkstations"/>
+			<property name="WorkstationIcon" value="ui_game_symbol_water"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="cntToilet01"/>
+			<property name="DescriptionKey" value="dewCollectorAltDesc"/>
+			<property name="Material" value="MstoneFurniture"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/LootContainers/toiletCommercial01Prefab.prefab"/>
+			<property name="ImposterExchange" value="imposterCTREighth" param1="98"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Place" value="TowardsPlacer"/>
+			<property name="RestrictSubmergedPlacement" value="true"/>
+			<property name="AllowedRotations" value="Basic90"/>
+			<property name="Path" value="solid"/>
+			<property name="IsDecoration" value="true"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="OpenSound" value="open_toilet"/>
+			<property name="CloseSound" value="close_toilet"/>
+			<property name="ConvertSound" value="collector_complete_item"/>
+			<property name="MinConvertTime" value="21600"/> <!-- 21600 Game Seconds = 6 Game Hours -->
+			<property name="MaxConvertTime" value="36000"/> <!-- 36000 Game Seconds = 10 Game Hours -->
+			<property name="ConvertToItem" value="drinkJarRiverWater"/>
+			<property name="ModdedConvertToItem" value="drinkJarBoiledWater"/>
+			<property name="ModdedConvertSpeed" value="2"/>
+			<property name="ModdedConvertCount" value="2"/>
+			<property name="ModTransformNames" value="1,2,3"/>
+			<property name="ModTypes" value="Speed,Count,Type"/>
+			<property name="EconomicValue" value="5"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="MaxDamage" value="200"/>
+			<property name="HeatMapStrength" value="2"/>
+			<property name="HeatMapTime" value="5000"/>
+			<property name="HeatMapFrequency" value="1000"/>
+			<property class="RepairItems">
+				<property name="resourceMetalPipe" value="2"/>
+				<property name="resourceScrapIron" value="4"/>
+			</property>
+			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceScrapIron" count="5,10" tag="salvageHarvest"/>
+			<drop event="Destroy" name="resourceMetalPipe" count="1,2"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="DestroyFX" value="blockdestroy_cloth,collector_destroy"/>
+			<property name="SortOrder1" value="B281"/>
+			<property name="SortOrder2" value="0103"/>
+			<property name="Group" value="Basics,Food/Cooking,Building,advBuilding"/>
+			<property name="Tags" value="workstationSkill,twitch_workstation"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+		</block>
+
+		<!-- *** TOILET_DEW_COLLECTOR -->
+		<block name="cntToilet03DewCollector">
+			<property name="Extends" value="cntToiletDewCollector"/>
+			<property name="CustomIcon" value="cntToilet03"/>
+			<property name="Model" value="@:Entities/LootContainers/toiletCommercial03Prefab.prefab"/>
+			<property name="SortOrder2" value="0104"/>
+		</block>
+		
+		<!-- *** PLASTIC_BARREL_DEW_COLLECTOR -->
+		<block name="cntPBarrelDewCollector">
+			<property name="Class" value="DewCollector"/>
+			<property name="UnlockedBy" value="craftingWorkstations"/>
+			<property name="WorkstationIcon" value="ui_game_symbol_water"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="cntBarrelPlasticSingle00"/>
+			<property name="DescriptionKey" value="dewCollectorAltDesc"/>
+			<property name="Material" value="MFuelBarrelPolymer"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Industrial/barrelPlasticPrefab"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="RestrictSubmergedPlacement" value="true"/>
+			<property name="AllowedRotations" value="Basic90"/>
+			<property name="Path" value="solid"/>
+			<property name="IsDecoration" value="true"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="OpenSound" value="open_cooler"/>
+			<property name="CloseSound" value="close_cooler"/>
+			<property name="ConvertSound" value="collector_complete_item"/>
+			<property name="MinConvertTime" value="21600"/> <!-- 21600 Game Seconds = 6 Game Hours -->
+			<property name="MaxConvertTime" value="36000"/> <!-- 36000 Game Seconds = 10 Game Hours -->
+			<property name="ConvertToItem" value="drinkJarRiverWater"/>
+			<property name="ModdedConvertToItem" value="drinkJarBoiledWater"/>
+			<property name="ModdedConvertSpeed" value="2"/>
+			<property name="ModdedConvertCount" value="2"/>
+			<property name="ModTransformNames" value="1,2,3"/>
+			<property name="ModTypes" value="Speed,Count,Type"/>
+			<property name="EconomicValue" value="5"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="MaxDamage" value="200"/>
+			<property name="HeatMapStrength" value="2"/>
+			<property name="HeatMapTime" value="5000"/>
+			<property name="HeatMapFrequency" value="1000"/>
+			<property class="RepairItems">
+				<property name="resourceScrapPolymers" value="10"/>
+			</property>
+			<drop event="Harvest" name="resourceScrapPolymers" count="1,3" tag="allHarvest"/>
+			<drop event="Harvest" name="resourceMetalPipe" count="0" tag="allHarvest"/>
+			<drop event="Destroy" name="resourceScrapPolymers" count="1,3"/>
+			<property name="DestroyFX" value="blockdestroy_cloth,collector_destroy"/>
+			<property name="SortOrder1" value="B281"/>
+			<property name="SortOrder2" value="0105"/>
+			<property name="Group" value="Basics,Food/Cooking,Building,advBuilding"/>
+			<property name="Tags" value="workstationSkill,twitch_workstation"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+		</block>
+		
+		<block name="cntPQBarrelDewCollector">
+			<property name="Extends" value="cntPBarrelDewCollector"/>
+			<property name="MultiBlockDim" value="2,1,2"/>
+			<property name="CustomIcon" value="cntBarrelPlasticQuadA"/>
+			<property name="Model" value="Entities/Industrial/barrelPlasticQuadAPrefab"/>
+			<property name="ModdedConvertCount" value="8"/>
+			<property name="SortOrder2" value="0106"/>
+		</block>
+		
+		<!-- *** WINE_BARREL_DEW_COLLECTOR -->
+		<block name="cntWBarrelDewCollector">
+			<property name="Class" value="DewCollector"/>
+			<property name="UnlockedBy" value="craftingWorkstations"/>
+			<property name="WorkstationIcon" value="ui_game_symbol_water"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="wineBarrelPlain"/>
+			<property name="DescriptionKey" value="dewCollectorAltDesc"/>
+			<property name="Material" value="Mwood_regular"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Decor/BarrelPrefab"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="RestrictSubmergedPlacement" value="true"/>
+			<property name="AllowedRotations" value="Basic90"/>
+			<property name="Path" value="solid"/>
+			<property name="IsDecoration" value="true"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="OpenSound" value="open_cooler"/>
+			<property name="CloseSound" value="close_cooler"/>
+			<property name="ConvertSound" value="collector_complete_item"/>
+			<property name="MinConvertTime" value="21600"/> <!-- 21600 Game Seconds = 6 Game Hours -->
+			<property name="MaxConvertTime" value="36000"/> <!-- 36000 Game Seconds = 10 Game Hours -->
+			<property name="ConvertToItem" value="drinkJarRiverWater"/>
+			<property name="ModdedConvertToItem" value="drinkJarBoiledWater"/>
+			<property name="ModdedConvertSpeed" value="2"/>
+			<property name="ModdedConvertCount" value="3"/>
+			<property name="ModTransformNames" value="1,2,3"/>
+			<property name="ModTypes" value="Speed,Count,Type"/>
+			<property name="EconomicValue" value="5"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="MaxDamage" value="200"/>
+			<property name="HeatMapStrength" value="2"/>
+			<property name="HeatMapTime" value="5000"/>
+			<property name="HeatMapFrequency" value="1000"/>
+			<property class="RepairItems">
+				<property name="resourceWood" value="10"/>
+			</property>
+			<drop event="Harvest" name="resourceWood" count="1,3" tag="allHarvest"/>
+			<drop event="Harvest" name="resourceMetalPipe" count="0" tag="allHarvest"/>
+			<drop event="Destroy" name="resourceWood" count="1,3"/>
+			<property name="DestroyFX" value="blockdestroy_cloth,collector_destroy"/>
+			<property name="SortOrder1" value="B281"/>
+			<property name="SortOrder2" value="0107"/>
+			<property name="Group" value="Basics,Food/Cooking,Building,advBuilding"/>
+			<property name="Tags" value="workstationSkill,twitch_workstation"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+		</block>
+		
+		<!-- *** CHEMISTRY_STATION_micro -->
+		<block name="chemistryStationMicro">
+			<!-- Class -->
+			<property name="Class" value="Campfire"/>
+			<property class="Workstation">
+				<property name="Modules" value="output,fuel,input"/>
+				<property name="CraftingAreaRecipes" value="chemistryStation"/> 
+			</property>
+			<property name="UnlockedBy" value="craftingWorkstations"/>
+			<!-- UI_Info -->
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="cntChemPileLarge"/>
+			<property name="DescriptionKey" value="chemistryStationDesc"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="WorkstationIcon" value="ui_game_symbol_chemistry"/>
+			<property name="CraftIcon" value="ui_game_symbol_chemistry"/>
+			<property name="CraftActionName" value="lblContextActionMix"/>
+			<property name="Stacknumber" value="1"/>
+			<!-- Visual -->
+			<property name="Material" value="Miron_scrap"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Crafting/chemistrySetLargePrefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="GndAlign" value="1"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="ParticleName" value="candle_flame"/>
+			<property name="ParticleOffset" value="0.562,0.08,0.35"/>
+			<!-- Placement -->
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="Path" value="solid"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<!-- Value -->
+			<property name="Weight" value="0"/>
+			<property name="EconomicValue" value="5000"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property name="TraderStageTemplate" value="midTier2"/><!-- chemistryStation -->
+			<!-- Interaction -->
+			<property name="MaxDamage" value="800"/>
+			<property name="HeatMapStrength" value="5"/>
+			<property name="HeatMapTime" value="5000"/>
+			<property name="HeatMapFrequency" value="1000"/>
+			<property name="ActiveRadiusEffects" value="buffCampfireAOE(3)"/>
+			<property name="OpenSound" value="jars_grab"/>
+			<property name="CloseSound" value="jars_place"/>
+			<property name="CraftSound" value="chem_station_mix_click"/>
+			<property name="CraftCompleteSound" value="chem_station_complete_item"/>
+			<property name="TakeDelay" value="15"/>
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="10"/>
+				<property name="resourceMetalPipe" value="10"/>
+				<property name="resourceWood" value="40"/>
+			</property>
+			<drop event="Harvest" name="resourceScrapIron" count="80" tag="allHarvest"/>
+			<drop event="Harvest" name="resourceWood" count="16" tag="allHarvest,lumberjackHarvest"/>
+			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceForgedIron" count="4" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceMetalPipe" count="4" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceWood" count="15" tag="salvageHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<!-- Sorting -->
+			<property name="SortOrder1" value="B281"/>
+			<property name="SortOrder2" value="0502"/>
+			<property name="Group" value="Building,Science,TCScience,advBuilding"/>
+			<property name="Tags" value="workstationSkill,twitch_workstation"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+		</block>
+		
+		<!-- *** WORKBENCH_micro -->
+		<block name="workbenchMicro">
+			<!-- Class -->
+			<property name="Class" value="Workstation"/>
+			<property class="Workstation">
+				<property name="Modules" value="output"/>
+				<property name="CraftingAreaRecipes" value="player,workbench"/>
+			</property>
+			<property name="UnlockedBy" value="craftingWorkstations"/>
+			<!-- UI_Info -->
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="cntToolBoxClosedWhite"/>
+			<property name="CustomIconTint" value="7F6868"/>
+			<property name="TintColor" value="7F6868"/>
+			<property name="DescriptionKey" value="workbenchDesc"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="WorkstationIcon" value="ui_game_symbol_workbench"/>
+			<property name="Stacknumber" value="1"/>
+			<!-- Visual -->
+			<property name="Material" value="Mmetal"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/LootContainers/metalToolBoxClosedPrefab.prefab"/>
+			<property name="ModelOffset" value="0,0.5,-0.25"/>
+			<property name="ImposterExclude" value="true"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="ParticleName" value="candle_flame"/>
+			<property name="ParticleOffset" value="0.5,0,0.5"/>
+			<!-- Placement -->
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="StabilitySupport" value="false"/>
+			<!-- Value -->
+			<property name="Weight" value="0"/>
+			<property name="EconomicValue" value="2000"/>
+			<property name="TraderStageTemplate" value="midTier1"/><!-- workbench -->
+			<!-- Interaction -->
+			<property name="MaxDamage" value="800"/>
+			<property name="HeatMapStrength" value="5"/>
+			<property name="HeatMapTime" value="5000"/>
+			<property name="HeatMapFrequency" value="1000"/>
+			<property name="OpenSound" value="open_toolchest"/>
+			<property name="CloseSound" value="close_toolchest"/>
+			<property name="TakeDelay" value="15"/>
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="5"/>
+				<property name="resourceMechanicalParts" value="5"/>
+				<property name="resourceScrapIron" value="5"/>
+			</property>
+			<drop event="Harvest" name="resourceScrapIron" count="20" tag="allHarvest"/>
+			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceForgedIron" count="5" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceMechanicalParts" count="4" tag="salvageHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<!-- Sorting -->
+			<property name="SortOrder1" value="B281"/>
+			<property name="SortOrder2" value="0303"/>
+			<property name="Group" value="Building,TCScience,advBuilding"/>
+			<property name="Tags" value="workstationSkill,twitch_workstation"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+		</block>
+		
+		<block name="cntRollingToolBox_Player">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Class" value="SecureLoot"/>
+			<property name="LootList" value="rollingToolBoxPlayer"/>
+			<property name="UnlockedBy" value="craftingWorkstations"/>
+			<property name="CustomIcon" value="cntRollingToolBoxClosedWhite"/>
+			<property name="CustomIconTint" value="7F6868"/>
+			<property name="TintColor" value="7F6868"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="DescriptionKey" value="furnitureGroupDesc"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Model" value="@:Entities/LootContainers/rollingToolChestClosedPrefab.prefab"/>
+			<property name="ModelOffset" value="0,0.5,0"/>
+			<property name="ImposterExclude" value="true"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="StabilitySupport" value="true"/>
+			<!-- <property name="FuelValue" value="150"/> -->
+			<property name="EconomicValue" value="12"/>
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="5"/>
+				<property name="resourceMechanicalParts" value="5"/>
+				<property name="resourceScrapIron" value="5"/>
+			</property>
+			<drop event="Harvest" name="resourceScrapIron" count="20" tag="allHarvest"/>
+			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceForgedIron" count="5" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceMechanicalParts" count="4" tag="salvageHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="DowngradeBlock" value="cntRollingToolBoxInsecure_Player"/>
+			<property name="SortOrder1" value="B281"/>
+			<property name="SortOrder2" value="0304"/>
+			<property name="FilterTags" value="MC_building,SC_residential,MC_outdoor,SC_decor"/>
+		</block>
+		
+		<block name="cntRollingToolBoxInsecure_Player">
+			<property name="CreativeMode" value="None"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Class" value="Loot"/>
+			<property name="LootList" value="rollingToolBoxPlayer"/>
+			<property name="UnlockedBy" value="craftingWorkstations"/>
+			<property name="CustomIcon" value="cntRollingToolBoxClosedWhite"/>
+			<property name="CustomIconTint" value="7F6868"/>
+			<property name="TintColor" value="7F6868"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="DescriptionKey" value="furnitureGroupDesc"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Model" value="@:Entities/LootContainers/rollingToolChestClosedPrefab.prefab"/>
+			<property name="ModelOffset" value="0,0.5,0"/>
+			<property name="ImposterExclude" value="true"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="StabilitySupport" value="true"/>
+			<!-- <property name="FuelValue" value="150"/> -->
+			<property name="EconomicValue" value="12"/>
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="5"/>
+				<property name="resourceMechanicalParts" value="5"/>
+				<property name="resourceScrapIron" value="5"/>
+			</property>
+			<drop event="Harvest" name="resourceScrapIron" count="20" tag="allHarvest"/>
+			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceForgedIron" count="5" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceMechanicalParts" count="4" tag="salvageHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="SortOrder1" value="B281"/>
+			<property name="SortOrder2" value="0304"/>
+			<property name="FilterTags" value="MC_building,SC_residential,MC_outdoor,SC_decor"/>
+		</block>
+
+	</append>
+	
+</configs>

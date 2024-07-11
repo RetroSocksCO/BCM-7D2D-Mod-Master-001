@@ -1,0 +1,32 @@
+<configs>
+	<!-- NOMAD TRIGGER SUIT PIECE BUFFS AND TURN OFF SUIT BUFF IF PIECE NOT WORN -->
+	<append xpath="/items/item[@name='armorNomadHelmet']/effect_group">
+	
+	<triggered_effect trigger="onSelfEquipStart" action="AddBuff" target="self" buff="buffRadSuitMask"/>
+	<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" target="self" buff="buffRadSuitMask"/>
+	<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" target="self" buff="buffRadSuit"/>
+
+	</append>
+	<append xpath="/items/item[@name='armorNomadOutfit']/effect_group">
+	
+	<triggered_effect trigger="onSelfEquipStart" action="AddBuff" target="self" buff="buffRadSuitChest"/>
+	<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" target="self" buff="buffRadSuitChest"/>
+	<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" target="self" buff="buffRadSuit"/>
+
+	</append>
+	<append xpath="/items/item[@name='armorNomadGloves']/effect_group">
+	
+	<triggered_effect trigger="onSelfEquipStart" action="AddBuff" target="self" buff="buffRadSuitGloves"/>
+	<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" target="self" buff="buffRadSuitGloves"/>
+	<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" target="self" buff="buffRadSuit"/>
+
+	</append>
+	<append xpath="/items/item[@name='armorNomadBoots']/effect_group">
+	
+	<triggered_effect trigger="onSelfEquipStart" action="AddBuff" target="self" buff="buffRadSuitBoots"/>
+	<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" target="self" buff="buffRadSuitBoots"/>
+	<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" target="self" buff="buffRadSuit"/>
+
+	</append>
+
+</configs>

@@ -1,0 +1,12 @@
+<configs>
+	
+	 <append xpath="/lootcontainers">
+
+		<!-- rolling tool cart player storage -->
+		<lootcontainer name="rollingToolBoxPlayer" count="0" size="8,8" sound_open="UseActions/open_toolchest" sound_close="UseActions/close_toolchest" loot_quality_template="qualBaseTemplate">
+			<item name="cobweb" count="0"/>
+		</lootcontainer>
+	 
+	 </append>
+	
+</configs>

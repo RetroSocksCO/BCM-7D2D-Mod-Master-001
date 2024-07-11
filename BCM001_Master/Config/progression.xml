@@ -1,0 +1,24 @@
+<configs>
+
+	<!-- Adds appropriate icon(s) to UI -->
+	<set xpath="/progression/crafting_skills/crafting_skill[@name='craftingWorkstations']/display_entry[@icon='workbench,resourceLockPick,toolBellows,toolAnvil']/@icon">workbench,cntToolBoxClosedWhite,cntRollingToolBoxClosedWhite,resourceLockPick,toolBellows,toolAnvil</set>
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingWorkstations']/display_entry/unlock_entry[@item='workbench']/@item">,workbenchMicro,cntRollingToolBox_Player</append>
+		
+	<!-- Unlocks the Recipe -->
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingWorkstations']/effect_group/passive_effect[@tags='workbench']/@tags">,workbenchMicro,cntRollingToolBox_Player</append>
+
+	<!-- Adds appropriate icon(s) to UI -->
+	<set xpath="/progression/crafting_skills/crafting_skill[@name='craftingWorkstations']/display_entry[@icon='cementMixer']/@icon">cementMixer,cntToilet01,cntToilet03</set>
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingWorkstations']/display_entry/unlock_entry[@item='cementMixer']/@item">,cntToiletDewCollector,cntToilet03DewCollector</append>
+		
+	<!-- Unlocks the Recipe -->
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingWorkstations']/effect_group/passive_effect[@tags='cementMixer']/@tags">,cntToiletDewCollector,cntToilet03DewCollector</append>
+
+	<!-- Adds appropriate icon(s) to UI -->
+	<set xpath="/progression/crafting_skills/crafting_skill[@name='craftingWorkstations']/display_entry[@icon='chemistryStation']/@icon">chemistryStation,cntChemPileLarge,cntWaterCoolerBottle,cntBarrelPlasticSingle00,wineBarrelPlain,cntBarrelPlasticQuadA</set>
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingWorkstations']/display_entry/unlock_entry[@item='chemistryStation']/@item">,chemistryStationMicro,cntBottleDewCollector,cntPBarrelDewCollector,cntWBarrelDewCollector,cntPQBarrelDewCollector</append>
+		
+	<!-- Unlocks the Recipe -->
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingWorkstations']/effect_group/passive_effect[@tags='chemistryStation']/@tags">,chemistryStationMicro,cntBottleDewCollector,cntPBarrelDewCollector,cntWBarrelDewCollector,cntPQBarrelDewCollector</append>
+
+</configs>
