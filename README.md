@@ -13,9 +13,9 @@ Mods Included:
 * ZedSpawning
 
 # Installation
-1. Locate your 7 Days to Die "Mods" folder.
-2. DO NOT DELETE: 0_TFP_Harmony
-3. Place folder "BCM001_Master" into the 7 Days to Die "Mods" folder.
+1.  Locate your 7 Days to Die "Mods" folder.
+2.  DO NOT DELETE: 0_TFP_Harmony
+3.  Place folder "BCM001_Master" into the 7 Days to Die "Mods" folder.
 
 # Credits
 The Fun Pimps and 7 Days to Die
