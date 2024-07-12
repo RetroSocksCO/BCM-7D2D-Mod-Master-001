@@ -72,7 +72,7 @@
 			<effect_group name="Radiation">
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="Health" operation="subtract" value="@$buffStatusRadiationPerc"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="Stamina" operation="subtract" value="@$buffStatusRadiationPerc"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="PlaySound" sound="player#vomit" play_in_head="true">
+				<triggered_effect trigger="onSelfBuffUpdate" action="PlaySound" sound="a_radiated_weak_lp" play_in_head="true">
 					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="2.5"/>
 				</triggered_effect>
 				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffDysenteryMain">
