@@ -1,6 +1,6 @@
 # Burns Complete Mod (001) - 7D2D V 1.0 (b316)
 
-* A 7 Days to Die V1.0 (b316) Experimental Mod Pack.
+* A 7 Days to Die V 1.0 (b316) Experimental Mod Pack.
 * Client, Server, and EAC-friendly Mod Pack.
 * All resources used are available in the vanilla client and retain core values.
 * All mods included have been condensed into a single file for easy installation.
