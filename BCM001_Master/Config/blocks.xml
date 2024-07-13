@@ -1,4 +1,8 @@
 <configs>
+
+	<append xpath="//block[@name='cntDewCollector']">
+		<property name="Stacknumber" value="1"/>
+	</append>
 	
 	<append xpath="/blocks">
 	
