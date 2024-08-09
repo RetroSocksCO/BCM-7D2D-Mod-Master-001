@@ -1,6 +1,6 @@
-# Burns Complete Mod (001)
+# Burnstein's Complete Mod (001)
 
-* A 7 Days to Die V 1.0 (b328) Experimental Mod Pack.
+* A 7 Days to Die V 1.0 Experimental Mod Pack.
 * Client, Server, and EAC-friendly Mod Pack.
 * All resources used are available in the vanilla client and retain core values.
 * All mods included have been condensed into a single file for easy installation.
